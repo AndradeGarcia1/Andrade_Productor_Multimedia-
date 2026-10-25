@@ -9,7 +9,7 @@
     /* Se reproduce solo. Los navegadores únicamente permiten la reproducción
        automática en silencio, así que se ofrece un botón para activar el sonido. */
     const id = SITIO.videoPresentacionYouTube;
-    caja.innerHTML = `<iframe id="yt-presentacion" src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&playsinline=1&rel=0&modestbranding=1&enablejsapi=1"
+    caja.innerHTML = `<iframe id="yt-presentacion" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&playsinline=1&rel=0&modestbranding=1&enablejsapi=1"
       title="Video de presentación de Fernando Andrade"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>

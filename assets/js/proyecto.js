@@ -133,6 +133,7 @@
     f.title = b.getAttribute("aria-label");
     f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     f.allowFullscreen = true;
+    f.referrerPolicy = "strict-origin-when-cross-origin";
     b.replaceWith(f);
   };
   const botonesYt = [...raiz.querySelectorAll("[data-yt]")];
