@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habilidades · Fernando Andrade</title>
+  <meta name="description" content="Software, IA creativa, producción multimedia y habilidades de comunicación.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Habilidades · Fernando Andrade">
+  <meta property="og:description" content="Software, IA creativa, producción multimedia y habilidades de comunicación.">
+  <meta property="og:image" content="assets/img/brand/og.jpg">
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <script>
+    /* Cortina de entrada: intro en la primera visita y transición entre páginas */
+    try { var s = sessionStorage, h = document.documentElement;
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        if (!s.getItem("visto")) h.className += " con-cortina intro";
+        else if (s.getItem("transicion")) h.className += " con-cortina";
+      }
+      s.setItem("visto", "1"); s.removeItem("transicion");
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="p-habilidades">
+  <div class="cortina" aria-hidden="true"><img src="assets/img/brand/logo-blanco.png" alt=""><span class="cortina__trazo"></span></div>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div id="site-header" class="header-reserva"></div>
+  <main id="contenido">
+    <section class="pagina-hero" data-hero>
+      <div class="glow glow--1"></div>
+      <div class="contenedor">
+        <span class="etiqueta" data-hero-item>Habilidades</span>
+        <h1>Herramientas y <span class="pincel">fortalezas</span></h1>
+        <p class="intro" data-hero-item>Lo que uso todos los días para producir, editar y comunicar.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--pegada">
+      <div class="contenedor">
+        <div class="habilidades" data-stagger>
+          <div class="hab">
+            <h2>Producción multimedia</h2>
+            <ul class="tags"><li>Video vertical</li><li>Edición audiovisual</li><li>Coberturas en vivo</li><li>Fotografía</li><li>Iluminación</li><li>Guion y storyboard</li></ul>
+          </div>
+          <div class="hab">
+            <h2>Software</h2>
+            <ul class="tags"><li>Premiere Pro</li><li>After Effects</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>HubSpot CRM</li><li>Microsoft Office</li></ul>
+          </div>
+          <div class="hab hab--ia">
+            <h2>IA creativa</h2>
+            <ul class="tags"><li>Higgsfield</li><li>Suno</li><li>Claude</li></ul>
+            <p>La uso para generar video, música y guiones, y para acelerar la producción sin perder criterio.</p>
+          </div>
+          <div class="hab">
+            <h2>Comunicación y marketing</h2>
+            <ul class="tags"><li>Copywriting</li><li>SMS, push y mailing</li><li>Campañas publicitarias</li><li>Gestión de redes</li><li>Pauta en Meta</li><li>Investigación de audiencias</li></ul>
+          </div>
+          <div class="hab">
+            <h2>Habilidades blandas</h2>
+            <ul class="tags"><li>Trabajo en equipo</li><li>Adaptación al cambio</li><li>Puntualidad</li><li>Empatía</li><li>Responsabilidad</li></ul>
+          </div>
+          <div class="hab">
+            <h2>Idiomas</h2>
+            <ul class="tags"><li>Español: nativo</li><li>Inglés: básico</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">En la práctica</span>
+        <h2 class="titulo" data-split>Dónde se ven estas <span class="pincel">habilidades</span></h2>
+        <div class="enlaces-hab" data-stagger>
+          <a href="proyecto.html?id=nequi"><b>Video corto y coberturas</b><span>Nequi SV →</span></a>
+          <a href="proyecto.html?id=dulce-pesadilla"><b>IA creativa</b><span>Dulce Pesadilla →</span></a>
+          <a href="proyecto.html?id=systronics"><b>Diseño para redes</b><span>Systronics →</span></a>
+          <a href="proyecto.html?id=fotografia"><b>Fotografía e iluminación</b><span>Fotografía →</span></a>
+          <a href="proyecto.html?id=saudade"><b>Iluminación de set</b><span>Saudade →</span></a>
+          <a href="proyecto.html?id=consultoria-udb"><b>Investigación de audiencias</b><span>Consultoría UDB →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/anim.js"></script>
+</body>
+</html>

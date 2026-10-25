@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos · Fernando Andrade</title>
+  <meta name="description" content="13 casos de estudio: proyectos de especialidad para marcas reales y de áreas afines a la comunicación.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Proyectos · Fernando Andrade">
+  <meta property="og:description" content="13 casos de estudio: proyectos de especialidad para marcas reales y de áreas afines a la comunicación.">
+  <meta property="og:image" content="assets/img/brand/og.jpg">
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <script>
+    /* Cortina de entrada: intro en la primera visita y transición entre páginas */
+    try { var s = sessionStorage, h = document.documentElement;
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        if (!s.getItem("visto")) h.className += " con-cortina intro";
+        else if (s.getItem("transicion")) h.className += " con-cortina";
+      }
+      s.setItem("visto", "1"); s.removeItem("transicion");
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="p-proyectos">
+  <div class="cortina" aria-hidden="true"><img src="assets/img/brand/logo-blanco.png" alt=""><span class="cortina__trazo"></span></div>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div id="site-header" class="header-reserva"></div>
+  <main id="contenido">
+    <section class="pagina-hero" data-hero>
+      <div class="glow glow--1"></div>
+      <div class="contenedor">
+        <span class="etiqueta" data-hero-item>Proyectos</span>
+        <h1>Casos de <span class="pincel">estudio</span></h1>
+        <p class="intro" data-hero-item>Primero, proyectos de mi especialidad para marcas reales. Después, proyectos de áreas afines a la comunicación. Cada caso explica el contexto, el reto, mi rol, el proceso y el resultado, e incluye el material completo.</p>
+        <div class="filtros" role="group" aria-label="Filtrar proyectos" data-hero-item>
+          <button class="filtro" data-filtro="todos" aria-pressed="true">Todos <span class="n" data-n="todos"></span></button>
+          <button class="filtro" data-filtro="especialidad" aria-pressed="false">Especialidad <span class="n" data-n="especialidad"></span></button>
+          <button class="filtro" data-filtro="afin" aria-pressed="false">Áreas afines <span class="n" data-n="afin"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--pegada">
+      <div class="contenedor">
+        <div id="lista-proyectos"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/anim.js"></script>
+</body>
+</html>

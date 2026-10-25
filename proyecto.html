@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso de estudio · Fernando Andrade</title>
+  <meta name="description" content="Caso de estudio del portafolio de Fernando Andrade, productor multimedia.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Caso de estudio · Fernando Andrade">
+  <meta property="og:description" content="Caso de estudio del portafolio de Fernando Andrade, productor multimedia.">
+  <meta property="og:image" content="assets/img/brand/og.jpg">
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <script>
+    /* Cortina de entrada: intro en la primera visita y transición entre páginas */
+    try { var s = sessionStorage, h = document.documentElement;
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        if (!s.getItem("visto")) h.className += " con-cortina intro";
+        else if (s.getItem("transicion")) h.className += " con-cortina";
+      }
+      s.setItem("visto", "1"); s.removeItem("transicion");
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="p-caso">
+  <div class="cortina" aria-hidden="true"><img src="assets/img/brand/logo-blanco.png" alt=""><span class="cortina__trazo"></span></div>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div id="site-header" class="header-reserva"></div>
+  <main id="contenido">
+    <div id="caso"></div>
+  </main>
+
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="cerrar" aria-label="Cerrar">×</button>
+    <button class="ant" aria-label="Anterior">‹</button>
+    <div><img alt=""><p></p></div>
+    <button class="sig" aria-label="Siguiente">›</button>
+  </div>
+
+  <div class="lector" id="lector" role="dialog" aria-modal="true" aria-labelledby="lector-titulo" hidden>
+    <div class="lector__barra">
+      <div>
+        <small>Material completo</small>
+        <h2 id="lector-titulo"></h2>
+      </div>
+      <div class="lector__acciones">
+        <a class="btn btn--primario" id="lector-pdf" download>Descargar PDF</a>
+        <button class="lector__cerrar" aria-label="Cerrar documento">×</button>
+      </div>
+    </div>
+    <div class="lector__paginas" id="lector-paginas"></div>
+  </div>
+  <div id="site-footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/proyecto.js"></script>
+  <script src="assets/js/anim.js"></script>
+</body>
+</html>

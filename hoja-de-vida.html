@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoja de vida · Fernando Andrade</title>
+  <meta name="description" content="Experiencia, formación y CV descargable de Fernando Andrade.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hoja de vida · Fernando Andrade">
+  <meta property="og:description" content="Experiencia, formación y CV descargable de Fernando Andrade.">
+  <meta property="og:image" content="assets/img/brand/og.jpg">
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <script>
+    /* Cortina de entrada: intro en la primera visita y transición entre páginas */
+    try { var s = sessionStorage, h = document.documentElement;
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        if (!s.getItem("visto")) h.className += " con-cortina intro";
+        else if (s.getItem("transicion")) h.className += " con-cortina";
+      }
+      s.setItem("visto", "1"); s.removeItem("transicion");
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="p-cv">
+  <div class="cortina" aria-hidden="true"><img src="assets/img/brand/logo-blanco.png" alt=""><span class="cortina__trazo"></span></div>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div id="site-header" class="header-reserva"></div>
+  <main id="contenido">
+    <section class="pagina-hero" data-hero>
+      <div class="glow glow--1"></div>
+      <div class="contenedor">
+        <span class="etiqueta" data-hero-item>Hoja de vida</span>
+        <h1>Experiencia y <span class="pincel">formación</span></h1>
+        <div class="hero__acciones" data-hero-item>
+          <a href="assets/docs/CV-Fernando-Andrade.pdf" download class="btn btn--primario">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            Descargar CV (PDF)
+          </a>
+          <a href="assets/docs/CV-Fernando-Andrade.pdf" target="_blank" rel="noopener" class="btn btn--secundario">Abrir PDF en otra pestaña</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--pegada">
+      <div class="contenedor cv">
+        <div data-reveal="izq">
+          <p class="cv__sub">Experiencia</p>
+          <ul class="linea">
+            <li><b>Analista de Operaciones Comerciales</b><span class="donde">Nequi SV (Banco Agrícola)</span> · <span class="cuando">Julio 2026 – actualidad</span>
+              <p>Logística nacional de kits para comercios con HubSpot CRM, control de inventario de material POP y entrega de premios de campañas mensuales.</p></li>
+            <li><b>Asistente de Marketing</b><span class="donde">Nequi SV (Banco Agrícola)</span> · <span class="cuando">Agosto 2025 – julio 2026</span>
+              <p>Videos cortos para redes, coberturas en tiempo real de eventos, conciertos y activaciones, y copys para SMS, push, mailings y comunicación interna.</p></li>
+            <li><b>Community Manager y Diseñador</b><span class="donde">Systronics S.A. de C.V.</span> · <span class="cuando">Diciembre 2024 – agosto 2025</span>
+              <p>Gestión de redes sociales, diseño gráfico y publicaciones para captar clientes potenciales.</p></li>
+          </ul>
+          <p class="cv__sub">Formación</p>
+          <ul class="linea">
+            <li><b>Licenciatura en Ciencias de la Comunicación</b><span class="donde">Universidad Don Bosco</span> · <span class="cuando">En curso (4.º año)</span></li>
+            <li><b>Content Creation Academy (certificado)</b><span class="donde">CuboIA, Agencia Nacional de Inteligencia Artificial</span> · <span class="cuando">2026</span></li>
+            <li><b>Bachillerato Técnico Vocacional en Desarrollo de Software</b><span class="donde">Colegio Don Bosco</span> · <span class="cuando">2020 – 2022</span></li>
+            <li><b>Curso de ciberseguridad</b><span class="donde">FUSALMO</span> · <span class="cuando">2023</span></li>
+          </ul>
+        </div>
+        <div data-reveal="der">
+          <a href="assets/docs/CV-Fernando-Andrade.pdf" target="_blank" rel="noopener" class="cv__preview" aria-label="Abrir hoja de vida en PDF">
+            <img src="assets/img/brand/cv-preview.jpg" alt="Vista previa de la hoja de vida de Fernando Andrade" width="1000" height="1416">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/anim.js"></script>
+</body>
+</html>
